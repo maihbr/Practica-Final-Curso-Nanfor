@@ -14,20 +14,20 @@ class Salon:
         self.estudiantes = estudiantes
         
     def imprimir_nombre(self):
-        print(f"Nombre del salon: {self.nombre}")
+        print(f"Nombre: {self.nombre}")
         
     def imprimir_grupo(self):
-        print(f"Grupo del salon: {self.grupo}")
+        print(f"Grupo:\n\t  {self.grupo.nombre}")
         
     def imprimir_curso(self):
-        print(f"Curso del salon: {self.curso}")
+        print(f"Curso:\n\t Nombre: {self.curso.nombre}, Duración: {self.curso.duracion}")
         
     def imprimir_profesor(self):
-        print(f"Profesor del salon: {self.profesor}")
+        print(f"Profesor:\n\t Nombre: {self.profesor.nombre}, Edad:  {self.profesor.edad}, País:{self.profesor.pais}")
         
     def imprimir_estudiantes(self):
         print("Estudiantes del salon:")
         for estudiante in self.estudiantes:
-            print(estudiante)
+            print(f"\tNombre: {estudiante.nombre}, Edad: {estudiante.edad},País: {estudiante.pais}")
     
 

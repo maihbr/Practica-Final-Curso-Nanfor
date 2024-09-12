@@ -12,15 +12,15 @@ class Estudiante(Persona):
         super().__init__(nombre, edad, pais)
         
     def imprimir_nombre(self):
-        print(self.nombre)
+        print(f"nombre:{self.nombre}")
         
     def imprimir_edad(self):
-        print(self.edad)
+        print(f"edad :{self.edad}")
         
     def imprimir_pais(self):
-        print(self.pais)
+        print(f"país: {self.pais}")
         
     def imprimir_datos(self):
-        print(self.nombre, self.edad, self.pais)
+        print(f"Nombre : {self.nombre}, Edad:{self.edad}, País:{self.pais}")
 
 

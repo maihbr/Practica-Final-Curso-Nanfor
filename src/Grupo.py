@@ -6,16 +6,16 @@ class Grupo:
         self.estudiantes = estudiantes
         
     def imprimir_nombre(self):
-        print(f"Nombre del grupo: {self.nombre}")
+        print(f"Grupo: {self.nombre}")
         
     def imprimir_curso(self):
-        print(f"Curso del grupo: {self.curso}")
+        print(f"Curso del grupo:\n\t Nombre : {self.curso.nombre}, Duración : {self.curso.duracion}")
         
     def imprimir_profesor(self):
-        print(f"Profesor del grupo: {self.profesor}")
+        print(f"Profesor del grupo:\n\t Nombre: {self.profesor.nombre}, Edad: {self.profesor.edad}, País {self.profesor.pais}")
         
     def imprimir_estudiantes(self):
         print("Estudiantes del grupo:")
         for estudiante in self.estudiantes:
-            print(estudiante)
+            print(f"\t Nombre: {estudiante.nombre}, Edad: {estudiante.edad}, País {estudiante.pais}")
 
