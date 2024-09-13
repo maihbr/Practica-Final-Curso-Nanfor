@@ -1,4 +1,4 @@
-# My Python Project
+
 
 This is a Python project that contains the following files:
 
